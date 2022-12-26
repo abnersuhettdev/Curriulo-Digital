@@ -17,12 +17,14 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   box-sizing: border-box;
+  font-size: 1rem;
+}
+body {
+  background-color: #f5f3f3;
 }
 body .container {
-  background-color: #f5f3f3;
   height: 100vh;
   width: 100vw;
-  position: absolute;
   display: inline-block;
 }
 section {
@@ -31,18 +33,34 @@ section {
 
 .profile {
   height: 100vh;
-  width: 20%;
-  background-image: linear-gradient(to top, #344E41,#3A5A40, #588157, #A3B18A, #DAD7CD);
-  font-size: 1em;
+  width: 25%;
+  background-image: linear-gradient(
+    to bottom,
+    #344e41,
+    #3a5a40,
+    #588157,
+    #a3b18a,
+    #dad7cd
+  );
 }
 #profile-pic {
   width: 100%;
+  padding-top: 30%;
+  margin: auto;
 }
 #profile-pic > img {
   border: 5px solid white;
   align-items: center;
   justify-content: center;
-  margin: 10%;
+  margin-left: 10%;
+}
+
+#menu {
+  padding-top: 20px;
+}
+ul {
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 ul,
@@ -54,9 +72,45 @@ a {
   position: relative;
   float: right;
   height: 100vh;
-  width: 80%;
+  width: 70%;
   width: 70%;
   text-align: start;
+  vertical-align: middle;
+  line-height: 2rem;
+}
+
+#data {
+  position: absolute;
+  margin-top: 20%;
+}
+
+#data > h1 {
+  font-size: 3rem;
+  color: #563635;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+#data > p {
+  margin: 25px 0px 25px 0px;
+  font-size: 1.5rem;
+}
+
+#data address {
+  text-align: right;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+.social-media {
+  text-align: right;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+#data address > p {
+  color: #6b6b6a;
+}
+#data address > p > a {
+  color: #357500;
 }
 
 a:visited {
@@ -73,7 +127,7 @@ a:visited {
 
 #menu a:hover {
   background: #e0dddb;
-  color: #6E9075;
+  color: #6e9075;
 }
 
 .social-media > li,
@@ -81,4 +135,50 @@ a {
   padding: 5px;
   box-sizing: border-box;
   display: inline-block;
+}
+.social-media > li > a > img {
+  width: 50px;
+  height: auto;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    position: relative;
+  }
+  .profile {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+    height: 23vh;
+    text-align: left;
+  }
+  #profile-pic {
+    padding-top: 5px;
+    width: 30vw;
+  }
+
+  #profile-pic img {
+    float: left;
+    width: 70%;
+  }
+
+  #menu {
+    padding-top: 5px;
+    width: 70%;
+  }
+
+  .content {
+    width: 100vw;
+    text-align: center;
+  }
+  #data {
+    margin: 20px;
+  }
+
+  #data > address,
+  .social-media {
+    text-align: center;
+    margin: 0;
+  }
 }
