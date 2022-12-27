@@ -60,7 +60,7 @@ section {
 #menu a {
   margin: auto;
   padding-top: 10px;
-  margin-left: 50px;
+  margin-left: 40px;
   text-decoration: none;
 }
 .content {
@@ -75,7 +75,7 @@ section {
 
 #data {
   position: absolute;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 #data > h1 {
@@ -138,12 +138,62 @@ a {
   padding-right: 15px;
 }
 
+/* Pagina Conhecimentos */
+
+#content-conhecimentos {
+  margin-top: 10%;
+}
+
+#content-conhecimentos h1 {
+  font-size: 2rem;
+  color: #563635;
+}
+
+#content-conhecimentos li {
+  font-size: 1.5rem;
+}
+
+#content-conhecimentos p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #563635;
+}
+
+#content-conhecimentos a {
+  color: #3a5a40;
+  text-decoration: none;
+  border-radius: 2%;
+  margin-right: 20px;
+}
+
+#content-conhecimentos a:hover {
+  transition: 1s;
+  background: #3a5a40;
+  color: #e0dddb;
+}
+
+#content-objetivo {
+  margin-top: 8%;
+}
+
+#content-objetivo h1 {
+  color: #357500;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+#content-objetivo p {
+  margin-top: 15px;
+  text-align: start;
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 675px) {
   body {
     position: relative;
   }
   .profile {
-    width: 100%;
+    width: 100vw;
     display: flex;
     margin-bottom: 25px;
     height: 23vh;
@@ -177,5 +227,23 @@ a {
   .social-media {
     text-align: center;
     margin: 0;
+  }
+  #content-conhecimentos {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #content-conhecimentos a {
+    color: #3a5a40;
+    text-decoration: none;
+  }
+
+  #content-objetivo {
+    margin-top: 10px;
+    margin: 20px;
+    text-align: start;
+  }
+
+  #content-objetivo h1 {
+    text-align: center;
   }
 }
