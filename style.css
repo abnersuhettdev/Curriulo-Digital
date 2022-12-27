@@ -30,7 +30,7 @@ section {
 }
 
 .profile {
-  height: 100vh;
+  height: 100%;
   width: 25%;
   background-image: linear-gradient(
     to bottom,
