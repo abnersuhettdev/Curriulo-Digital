@@ -21,11 +21,9 @@
 }
 body {
   background-color: #f5f3f3;
-}
-body .container {
   height: 100vh;
   width: 100vw;
-  display: inline-block;
+  display: flex;
 }
 section {
   display: inline-block;
@@ -58,22 +56,18 @@ section {
 #menu {
   padding-top: 20px;
 }
-ul {
-  padding-top: 10px;
-  padding-left: 20px;
-}
 
-ul,
-li,
-a {
+#menu a {
+  margin: auto;
+  padding-top: 10px;
+  margin-left: 50px;
   text-decoration: none;
 }
 .content {
   position: relative;
   float: right;
   height: 100vh;
-  width: 70%;
-  width: 70%;
+  width: 70vw;
   text-align: start;
   vertical-align: middle;
   line-height: 2rem;
@@ -123,9 +117,11 @@ a:visited {
   text-decoration: none;
   padding: 8px;
   display: block;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #menu a:hover {
+  transition: 1s;
   background: #e0dddb;
   color: #6e9075;
 }
@@ -142,7 +138,7 @@ a {
   padding-right: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
   body {
     position: relative;
   }
@@ -165,6 +161,7 @@ a {
 
   #menu {
     padding-top: 5px;
+    line-height: normal;
     width: 70%;
   }
 
